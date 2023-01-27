@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    --bs-body-font-family: 'helvetica';
+    --bs-body-color: #8D95D6;
+}
+
+.display-none {
+    display: none;
+}
+
+.dark-gray {
+    color: #ACACAC;
+}
+
+.light-gray {
+    color:#D8D8D8;
+}
+
+.font-dark {
+    color: #8085AF;
+}
+
+.p-12 {
+    padding: 120px;
+}
+
+.pd-60 {
+    padding-bottom: 60px;
+}
+
+/* next-btn */
+.Q1-btn .btn {
+    --bs-btn-border-radius: 8rem;
+    --bs-border-width: 5px;
+    width: 227px;
+    height: 55px;
+    /* font-size: 20px; */
+}
+
+
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8D95D6;
+    --bs-btn-border-color: #8D95D6;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #D4DEF0;
+    --bs-btn-hover-border-color: #D4DEF0;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #D4DEF0;
+    --bs-btn-active-border-color: #D4DEF0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #8D95D6;
+    --bs-btn-disabled-border-color: #8D95D6;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #D4DEF0;
+    --bs-btn-border-color: #D4DEF0;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8D95D6;
+    --bs-btn-hover-border-color: #8D95D6;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8D95D6;
+    --bs-btn-active-border-color: #8D95D6;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #D4DEF0;
+    --bs-btn-disabled-border-color: #D4DEF0;
+}
+
+
+/* sign-up 2 */
+
+.info-area {
+    display: flex;
+}
+
+.form-label {
+    text-align: left;
+}
+
+
+.form-control {
+    width: 245px;
+    position: absolute;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+
+
+input[type=text]{
+    outline: none;
+  }
+
+.int-info {
+    font-size: 13px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.baseline{
+    align-items: baseline;
+}
+
+.form-check {
+    padding-left: 2.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #8D95D6;
+    border-color: #8085AF;
+}
+
+
+
+
+/* img-hover */
+
+.scale-img:hover {
+    transform: scale(1.15) translateZ(0);
+    transition:
+        filter 200ms linear,
+        transform 200ms linear;
+    transform: scale(1.15) translateZ(0);
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.click-img {
+    transform: scale(1.15) translateZ(0);
+    transition:
+        filter 200ms linear,
+        transform 200ms linear;
+    transform: scale(1.15) translateZ(0);
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.scale-img:not(:hover) {
+    filter: brightness(-1) saturate(0) contrast(1.2) blur(20px);
+}
+
+
+/* info table */
+
+
+.ec-base-table table tbody th {
+    width: 90px;
+    padding: 15px 0;
+    color: #222;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.ec-base-table table tbody td {
+    padding: 15px 0;
+    float: left;
+}
+
+.sectable {
+    padding-left: 70px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+
+.ec-base-table td {
+    padding: 0;
+    color: #222222;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.inputTypeText {
+    width: 245px;
+    margin-left: 0;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+.inputTypeText1 {
+    width: 50px;
+    margin-left: 0;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+.inputTypeText2 {
+    width: 35px;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+.inputTypeText3 {
+    width: 35px;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+
+
+/* file upload */
+.initFileUpload {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100px;
+    color: #636363;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secondBtn {
+    padding: 50px;
+    text-align: center;
+}
+
+
+.inputTypeText-box {
+    border: 0;
+    background-color: #F2F2F2;
+    width: 245px;
+    height: 34px;
+}
+
+.phoneTextBox {
+    border: 0;
+    background-color: #F2F2F2;
+    width: 75px;
+    height: 34px;
+    margin-right: 6px;
+}
+
+.int-info input[type=password] {
+    min-height: 34px;
+    line-height: 34px;
+    margin: 0;
+    font-size: 12px;
+    border: 0;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: transparent;
+}
+
+input:focus {outline: none;}
+
+.mt05 {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.help {
+    font-size: 10px;
+    color: #b4b4b4;
+}
+
+
+
+
+/* Final page */
+
+#final {
+    margin-top: 200px;
+}
+
+
+#final h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 2px;
+    line-height: 69px;
+}
+
+#final .fs {
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.tp-l {
+    text-align: left;
+    float: left;
+    margin-top: 40px;
+}
+
+/* .tp-l {
+    text-align: left;
+    float: left;
+    padding: 34px;
+    margin-top: 40px;
+} */
+
+.ta-r{
+    text-align: right;
+}
+
+.ta-l{
+    text-align: left;
+}
+
+
+.pm-b {
+    margin-bottom: 33px;
+}
+
+.pm-l {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.bm-t {
+    margin-top: 28px;
+}
+
+
+
+
+
+/* clickButtonEvent */
+/* 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px) }
+    60% {-webkit-transform: translateY(-20px);}
+} 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-20px);}
+} 
+
+
+.bounce {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+} */
+
