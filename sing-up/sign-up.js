@@ -45,12 +45,11 @@ function ani3() {
 }
 
 
-function gologin() {
-  addEventListener('click', e => {
-    window.location= 'http://127.0.0.1:5500/sign-in/login.html';
+function gofinal() {
+  addEventListener('click', e=> {
+    window.location = 'http://127.0.0.1:5500/sing-up/sing-up-final.html'
   })
 }
-
 
 // forEach 사용해서 반복문 만들어보기
 
