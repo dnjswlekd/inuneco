@@ -185,3 +185,7 @@ a {
   content: "";
   background-image: url(/images/autoLogin-checked.png);
 }
+
+.test {
+  width: 200px;
+}
