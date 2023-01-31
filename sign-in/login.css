@@ -33,6 +33,7 @@ a {
   width: 400px;
   position: relative;
   margin-top: 2px;
+  padding-left: 41px;
 }
 
 .int-area input {
@@ -154,7 +155,11 @@ a {
 }
 
 .up {
-  padding-left: 90px;
+  padding-left: 120px;
+}
+
+.up2 {
+  padding-left: 21px;
 }
 
 .btn-auto p {
@@ -184,8 +189,4 @@ a {
 .btn-auto p label input[name="login-y"]:checked + span::before {
   content: "";
   background-image: url(/images/autoLogin-checked.png);
-}
-
-.test {
-  width: 200px;
 }
