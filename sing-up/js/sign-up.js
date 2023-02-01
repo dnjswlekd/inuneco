@@ -1,6 +1,7 @@
 // select-dog or cat
 function change_img(e) {
-  var btns = document.querySelectorAll(".scale-img");
+  const btns = document.querySelectorAll(".scale-img");
+  const clickbtns = document.querySelectorAll(".btn");
   btns.forEach(function (img, i) {
     if (e.currentTarget == img) {
       img.classList.add("click-img");
@@ -10,6 +11,10 @@ function change_img(e) {
   });
   console.log(e.currentTarget);
 }
+
+
+
+
 
 // btn-animation
 const first = document.querySelector("#first-qna");
@@ -47,32 +52,10 @@ function gofinal() {
   });
 }
 
-// forEach 사용해서 반복문 만들어보기
+function goModal() {
+  addEventListener("click", (e) => {
+    window.location = "../practice/index.html";
+  });
+}
 
-// progressbar
-// const progress = document.getElementById("progress")
-// const next = document.getElementById("next")
-// const circles = document.getElementById("btn")
 
-// let currentActive = 1;
-
-// next.addEventListener('click', ()=> {
-//   currentActive++;
-
-//   if(currentActive > circles.length) {
-//     currentActive = circles.lenght;
-//   }
-//   update();
-// });
-
-// function update() {
-//   circles.forEach((circle, idx) => {
-//     if (idx < currentActive) {
-//       circle.classList.add("active");
-//     } else {
-//       circle.classList.remove("active");
-//     }
-//   });
-//   const actives = document.querySelectorAll('.active')
-
-// }

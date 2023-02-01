@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Modal Animations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="modal-container">
+    <div class="modal-background">
+      <div class="modal">
+        <a class="close" href="#">×</a>
+        <div class="modal_body">
+          <div class="modal-head">
+            <h1>잠깐!<br>우리아이에 대해 알려주세요!</h1>
+            <p>아이에게 맞는 상품을 추천드릴게요.</p>
+          </div>
+
+          <div>우리 아이의 어떤 건강에 관심이 있으신가요?</div>
+
+          <!-- 버튼 호버 -->
+          <div id="modal-select">
+            <button class="btn-2">
+              <span>관절</span>
+            </button>
+            <button class="btn-2">
+              <span>모질</span>
+            </button>
+            <button class="btn-2">
+              <span>소화기</span>
+            </button>
+          </div>
+          <div id="modal-select">
+            <button class="btn-2">
+              <span>눈</span>
+            </button>
+            <button class="btn-2">
+              <span>눈물</span>
+            </button>
+            <button class="btn-2">
+              <span>체중</span>
+            </button>
+          </div>
+          <div id="modal-select">
+            <button class="btn-2">
+              <span>치아</span>
+            </button>
+            <button class="btn-2">
+              <span>피부</span>
+            </button>
+            <button class="btn-2">
+              <span>신장</span>
+            </button>
+          </div>
+          <div id="modal-select">
+            <button class="btn-2">
+              <span>귀</span>
+            </button>
+            <button class="btn-2">
+              <span>심장</span>
+            </button>
+            <button class="btn-2">
+              <span>호흡기</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 50px;">아이에게 혹시 알러지가 있나요?</div>
+
+          <div id="modal-select">
+            <button class="btn-3 hover-filled-slide-up clicked">
+              <span>네, 있어요</span>
+            </button>
+            <button class="btn-3 hover-filled-slide-up">
+              <span>아니요, 없어요</span>
+            </button>
+          </div>
+        </div>
+        <div class="Q1-btn secondBtn">
+          <button type="submit" class="btn btn-primary" data-bs-toggle="button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="buttons">
+      <div id="four" class="button">modal button</div><br>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

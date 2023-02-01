@@ -10,6 +10,7 @@
     <!-- Custom styles css-->
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/signup2.css">
+    <link rel="stylesheet" href="css/modal.css">
     <!-- swiper css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>innuneco-login.html</title>
@@ -73,7 +74,7 @@
                                 </div>
 
                                 <div class="Q1-btn">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="button">NEXT</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="button">NEXT</button>
                                 </div>
                             </div>
                         </section>
@@ -156,6 +157,15 @@
                                                         chosen
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <th>추가정보 *</th>
+                                                    <td>
+                                                        <div class="modal">
+                                                            <div class="modal_body">Modal</div>
+                                                          </div>
+                                                          <button class="btn-open-popup">Modal 띄우기</button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -168,6 +178,13 @@
                                 <button type="submit" class="btn btn-primary" data-bs-toggle="button">NEXT</button>
                             </div>
                         </section>
+
+                        
+
+
+
+
+
 
                         <!-- third -->
                         <section id="third-qna" class="swiper-slide">
@@ -299,6 +316,7 @@
 
     <!-- custom js -->
     <script src="js/sign-up.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
