@@ -20,3 +20,7 @@ function outsideClick(e){
   }
 }
 
+const mBtn = document.querySelectorAll('btn-2');
+function selectModal(){
+  mBtn.classList.toggle('active');
+}

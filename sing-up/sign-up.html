@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/modal.css">
     <!-- swiper css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <title>innuneco-login.html</title>
+    <title>innuneco-sign-up.html</title>
 
 </head>
 
@@ -74,7 +74,8 @@
                                 </div>
 
                                 <div class="Q1-btn">
-                                    <button type="button" class="btn btn-secondary" data-bs-toggle="button">NEXT</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-toggle="button">NEXT</button>
                                 </div>
                             </div>
                         </section>
@@ -97,12 +98,12 @@
                                     <div class="col-6 ec-base-table sectable">
                                         <table border="0">
                                             <tbody>
-                                                <tr class="">
+                                                <tr>
                                                     <th scope="row">이름 *</th>
                                                     <td><input type="text" class="inputTypeText" id="petName"
                                                             placeholder="" value="" autocomplete="off" required>
                                                 </tr>
-                                                <tr class="">
+                                                <tr>
                                                     <th scope="row">성별 *</th>
                                                     <td><input class="form-check-input" type="radio" name="gridRadios"
                                                             id="gridRadios1" value="option1" checked>
@@ -160,10 +161,10 @@
                                                 <tr>
                                                     <th>추가정보 *</th>
                                                     <td>
-                                                        <div class="modal">
-                                                            <div class="modal_body">Modal</div>
-                                                          </div>
-                                                          <button class="btn-open-popup">Modal 띄우기</button>
+                                                        <div class="content">
+                                                            <button id="modalBtn" class="modalButton">click
+                                                                here</button>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -179,7 +180,7 @@
                             </div>
                         </section>
 
-                        
+
 
 
 
@@ -284,25 +285,107 @@
             <div class="modal">
                 <div class="modal" tabindex="-1">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Modal title</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                          <p>Modal body text goes here.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
 
             <!-- modal -->
+            <div id="simpleModal" class="modal">
+                <div class="modal-background">
+                    <div class="modal-content">
+                        <span class="closeBtn">×</span>
+                        <div class="modal-header row">
+                            <h1 class="fw-bold" style="font-size: 30px;">잠깐!<br>우리아이에 대해<br> 알려주세요!</h1>
+                            <p style="color: #222;">아이에게 맞는 상품을 추천드릴게요.</p>
+                        </div>
+
+                        <div class="modal-body">
+                            <div>우리 아이의 어떤 건강에 관심이 있으신가요?</div>
+
+                            <!-- 버튼 호버 -->
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>관절</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>모질</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>소화기</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>눈</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>눈물</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>체중</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>치아</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>피부</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>신장</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>귀</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>심장</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>호흡기</span>
+                                </button>
+                            </div>
+
+                            <div style="margin-top: 50px;">아이에게 혹시 알러지가 있나요?
+                            </div>
+
+                            <div id="modal-select">
+                                <button
+                                    class="btn-3  clicked">
+                                    <span>네, 있어요</span>
+                                </button>
+                                <button class="btn-3">
+                                    <span>아니요, 없어요</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="Q1-btn secondBtn">
+                            <button type="submit" class="btn btn-primary"
+                                data-bs-toggle="button">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

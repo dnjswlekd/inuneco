@@ -8,34 +8,204 @@
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles css-->
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="stylesheet" href="css/signup2.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="../sing-up/css/signup.css">
+    <link rel="stylesheet" href="../sing-up/css/signup2.css">
+    <link rel="stylesheet" href="css/myPage.css">
     <!-- swiper css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <title>innuneco-login.html</title>
+    <title>innuneco-myPage.html</title>
 
 </head>
 
 <body>
-    <div id="sign-up">
+    <div id="myPage" class="text-center">
         <div class="container">
-            <h1>Mypage</h1>
+            <div class="pageNav text-center">
+                <h1 class="mb-4">MY PAGE</h1>
+                <button type="button" class="btn btn-primary active col-sm-2">홈</button>
+                <button type="button" class="btn btn-secondary col-sm-2">주문내역</button>
+                <button type="button" class="btn btn-secondary col-sm-2">쿠폰</button>
+                <button type="button" class="btn btn-secondary col-sm-2">적립금</button>
+                <button type="button" class="btn btn-secondary col-sm-2">회원정보</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="myshop_wrap widthHolder pd0">
+                <div class="myshop_home_top">
+                    <div class="myshop_home_top_btns clearfix">
+                        <a class="btnLine" href="/myshop/addr/list.html">배송 주소록 관리</a>
+                        <a class="btnLine" href="/member/modify.html">회원정보 수정</a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="myshop_home_top_info textcenter" style="opacity: 1;">
 
+                        <a href="/member/membership.html">
+                            <font class="xans-element- xans-myshop xans-myshop-asyncbenefit myshop_home_group_btns ">
+                                <span class="xans-member-var-group_name">일반회원</span><span
+                                    class="myshop_benefit_ship_free_message"></span>
+                                <font style="font-family:'HGGGothicssi';">&gt;</font>
+                            </font>
+                        </a>
+
+                        <a class="pet_img" id="pet_img" href="/member/modify.html"></a>
+
+                        <h1 class="hgg yesInformation" style="display: none;">
+                            <font id="memberName"
+                                class="xans-element- xans-myshop xans-myshop-asyncbenefit memberName ">
+                                박원지님,</font>
+                            <b class="petName"></b>와<br>
+                            함께한 지 <b class="petPeriod">44989</b>일째입니다.
+                        </h1>
+                        <h1 class="hgg noInformation" id="noInformation" style="display: block;">
+                            <b>우리 아이 </b>
+                            <font class="xans-element- xans-myshop xans-myshop-asyncbenefit ">등록하기
+                            </font>
+                        </h1>
+
+                        <div class="clear"></div>
+
+                        <div class="yesInformation" style="display: none;">
+                            <font class="petName"></font> | <font class="petAge">2024</font>살 | <font class="petGender">
+                            </font> |
+                            <font class="petBirth">년 월 일</font> 생
+                        </div>
+                        <div class="noInformation" style="display: block;">
+                            <font class="">
+                                <font class="memberName">박원지님,</font> 더 자세한<br>반려동물 정보를 입력해주세요.
+                            </font>
+                            <div class="clear"></div>
+                            <a href="/member/modify.html">더 입력하기</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div style="display:none;"><input id="name" name="name" fw-filter="isFill&amp;isMax[30]" fw-label="이름"
+                        fw-msg="" class="ec-member-name" placeholder="" maxlength="30" readonly="readonly" value="박원지"
+                        type="text"><input id="partner_year" name="partner_year" fw-filter="" fw-label="배우자 생일"
+                        fw-msg="" class="inputTypeText" placeholder="" maxlength="4" value="" type="text"><input
+                        id="partner_month" name="partner_month" fw-filter="" fw-label="배우자 생일" fw-msg=""
+                        class="inputTypeText" placeholder="" maxlength="2" value="" type="text"><input id="partner_day"
+                        name="partner_day" fw-filter="" fw-label="배우자 생일" fw-msg="" class="inputTypeText" placeholder=""
+                        maxlength="2" value="" type="text"><input id="add1" name="add1" fw-filter="" fw-label="반려동물 이름"
+                        fw-msg="" class="inputTypeText" placeholder="" maxlength="200" value="" type="text"><label
+                        for="add2__0" style="white-space:nowrap;"><input id="add2__0" name="add2" fw-filter=""
+                            fw-label="반려동물 성별" fw-msg="" value="여" type="radio">여</label>
+                    <label for="add2__1" style="white-space:nowrap;"><input id="add2__1" name="add2" fw-filter=""
+                            fw-label="반려동물 성별" fw-msg="" value="남" type="radio">남</label>
+                </div>
+                <div class="myshop_home_bottom clearfix">
+                    <div class="per_50 borderright mowidth100 monoborder">
+                        <div class="xans-element- xans-myshop xans-myshop-asyncbankbook clearfix ">
+                            <div class="per_50 mowidth100 pd10 borderright borderbottom clearfix">
+                                <a href="/myshop/coupon/coupon.html" class="">
+                                    사용가능한쿠폰
+                                    <h2 class="hgg floatright"><span id="xans_myshop_bankbook_coupon_cnt">1</span>장</h2>
+                                </a>
+                            </div>
+                            <div class="per_50 mowidth100 pd10 borderbottom clearfix">
+                                <a href="/myshop/mileage/historyList.html" class="">
+                                    적립금 <h2 class="hgg floatright"><span
+                                            id="xans_myshop_bankbook_avail_mileage">0원</span>
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="per_100 pd10 moborderbottom">
+                            <h3>주문배송조회<span>&nbsp;&nbsp;최근 3개월기준</span><a href="/myshop/order/list.html"
+                                    class="floatright myshopArrowBtn"></a>
+                            </h3>
+                            <div class="clear"></div>
+                            <div class="xans-element- xans-myshop xans-myshop-orderstate ">
+                                <ul class="order linone">
+                                    <li>
+                                        <a href="/myshop/order/list.html?order_status=shipped_before"
+                                            class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_before_count">0</span></a>
+                                        <strong>입금전</strong>
+                                    </li>
+                                    <li>
+                                        <a href="/myshop/order/list.html?order_status=shipped_standby"
+                                            class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
+                                        <strong>배송준비중</strong>
+                                    </li>
+                                    <li>
+                                        <a href="/myshop/order/list.html?order_status=shipped_begin"
+                                            class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_begin_count">0</span></a>
+                                        <strong>배송중</strong>
+                                    </li>
+                                    <li>
+                                        <a href="/myshop/order/list.html?order_status=shipped_complate"
+                                            class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
+                                        <strong>배송완료</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per_50 pd10 mowidth100">
+                        <h3>고객센터</h3>
+                        <br><br>
+                        <h2 class="hgg textcenter">1877-3228</h2>
+                        <p class="textcenter">
+                            <font class="green bold">AM 09:00 ~ PM 17:00</font><br>Lunch PM 12:00 ~ 13:00
+                            <br>Sat, Sun, Holiday OFF
+                        </p>
+                        <br><br>
+                    </div>
+                    <div class="clear borderbottom" style="margin-top:-1px;"></div>
+                    <div class="per_50 pd10 borderright mowidth100 monoborder moborderbottom">
+                        <h3>취소/ 교환/ 반품내역<a href="/myshop/order/list.html?mode=cs" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                        <div class="clear"></div>
+                        <div class="xans-element- xans-myshop xans-myshop-orderstate ">
+                            <ul class="cs clearfix linone">
+                                <li>
+                                    <strong>취소</strong>
+                                    <a href="/myshop/order/list.html?order_status=order_cancel" class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_cancel_count">0</span></a>
+                                </li>
+                                <li>
+                                    <strong>교환</strong>
+                                    <a href="/myshop/order/list.html?order_status=order_exchange"
+                                        class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_exchange_count">0</span></a>
+                                </li>
+                                <li>
+                                    <strong>반품</strong>
+                                    <a href="/myshop/order/list.html?order_status=order_return" class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_return_count">0</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="per_50 mowidth100 monoborder">
+                        <h3 class="pd10">
+                            공지사항<a href="/front/php/b/board_list.php?board_no=1" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                        <h3 class="pd10 bordertop">
+                            자주 묻는 질문<a href="/cs/faq.html" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+    <script src="../sing-up/js/swiper.js"></script>
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- custom js -->
-    <script src="js/sign-up.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="../sing-up/js/sign-up.js"></script>
+    <script src="js/myPage.js"></script>
 </body>
 
 </html>

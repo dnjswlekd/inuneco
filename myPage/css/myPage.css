@@ -1,0 +1,71 @@
+/* #myPage {
+    background: #dfe9e8;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 180px 0 0;
+    margin: 0 auto;
+} */
+
+#myPage .container {
+  width: 959px;
+}
+
+#myPage .pageNav {
+  margin-top: 123px;
+}
+
+#myPage .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+#myPage .btn {
+  width: 12%;
+  border-radius: 70px;
+  margin-right: 8px;
+}
+
+/* .pageTopWrap {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0;
+    margin: 0 0;
+    background: #d4def0;
+    margin-bottom: -180px;
+    padding-bottom: 200px;
+} */
+
+.linone {
+  list-style-type: none;
+}
+
+.myshop_wrap.pd0 {
+  padding: 0;
+}
+
+.myshop_wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40px 15px 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.widthHolder {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 51px;
+}
+
+.myshop_home_top {
+  position: relative;
+  min-height: 100px;
+  background: #fafafa;
+  padding: 20px;
+}
