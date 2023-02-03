@@ -3,6 +3,7 @@
 
   const swiper = new Swiper(".swiper-container", {
     // Optional parameters
+    touchRatio: 0,//드래그 금지
     speed: 500,
     loop: false,
 

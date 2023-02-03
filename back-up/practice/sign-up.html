@@ -59,7 +59,7 @@
                             </div>
 
                             <div class="row text-center">
-                                <div id="imgClick2" class="col-5">
+                                <div class="col-5">
                                     <img src="../images/sign-up-dog.png" alt="signup-Dog" class="img-fluid scale-img"
                                         onclick="change_img(event)">
                                     <p class="fs-3 p-4 fw-bold">강아지</p>
@@ -67,13 +67,13 @@
                                 <div class="col col-2 align-self-center pd-60">
                                     <p class="dark-gray">OR</p>
                                 </div>
-                                <div id="imgClick" class="col-5">
+                                <div class="col-5">
                                     <img src="../images/sign-up-cat.png" alt="signup-Cat" class="img-fluid scale-img"
                                         onclick="change_img(event)">
                                     <p class="fs-3 p-4 fw-bold">고양이</p>
                                 </div>
 
-                                <div class="Q1-btn changeBtn">
+                                <div class="Q1-btn">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-toggle="button">NEXT</button>
                                 </div>
@@ -101,7 +101,7 @@
                                                 <tr>
                                                     <th scope="row">이름 *</th>
                                                     <td><input type="text" class="inputTypeText" id="petName"
-                                                            placeholder="name" value="" autocomplete="off" required>
+                                                            placeholder="" value="" autocomplete="off" required>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">성별 *</th>
@@ -109,13 +109,13 @@
                                                             id="gridRadios1" value="option1" checked>
                                                         <label class="form-check-label mx-2" for="gridRadios1">여</label>
                                                         <input class="form-check-input" type="radio" name="gridRadios"
-                                                            id="gridRadios2" value="option2" style="cursor: pointer;">
+                                                            id="gridRadios2" value="option2">
                                                         <label class="form-check-label mx-2" for="gridRadios2">남</label>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th>생일 *</th>
-                                                    <td>
+                                                    <td class="partner_birth">
                                                         <input id="partner_year" name="partner_year" fw-filter=""
                                                             fw-label="" fw-msg="" class="inputTypeText1" placeholder=""
                                                             maxlength="4" value="" type="text"> 년
@@ -162,7 +162,8 @@
                                                     <th>정보 *</th>
                                                     <td>
                                                         <div class="content">
-                                                            <button id="modalBtn" class="modalButton">Click Here!</button>
+                                                            <button id="modalBtn" class="modalButton">click
+                                                                here</button>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -278,163 +279,245 @@
 
 
 
-
-            <!-- modal (1) -->
+            
+            <!-- modal(1) -->
             <div id="simpleModal" class="modal">
                 <div class="modal-background">
+                    <div class="modal-content">
+                        <span class="closeBtn">×</span>
+                        <div class="modal-header row">
+                            <h1 class="fw-bold" style="font-size: 30px;">잠깐!<br>우리아이에 대해<br> 알려주세요!</h1>
+                            <p style="color: #222;">아이에게 맞는 상품을 추천드릴게요.</p>
+                        </div>
 
-                    <div class="swiper">
-                        <div class="modal-content" style="overflow: hidden;">
-                            <span class="closeBtn">×</span>
-                            <div class="modal-container">
-                                <div class="swiper-wrapper" style="height: 693px;">
-                                    <!-- 모달창 1 -->
-                                    <section class="swiper-slide">
-                                        <div class="modal-header row"  style="margin-top: -21px;">
-                                            <h1 class="fw-bold" style="font-size: 30px;">잠깐!<br>우리아이에 대해<br> 알려주세요!</h1>
-                                            <p style="color: #222;">아이에게 맞는 상품을 추천드릴게요.</p>
-                                        </div>
+                        <div class="modal-body">
+                            <div>우리 아이의 어떤 건강에 관심이 있으신가요?</div>
 
-                                        <div class="modal-body" style="margin-top: 15px;">
-                                            <div style="font-size: 18px; margin-bottom: 19px; color:#222;">우리 아이의 어떤 건강에 관심이 있으신가요?</div>
+                            <!-- 버튼 호버 -->
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>관절</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>모질</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>소화기</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>눈</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>눈물</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>체중</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>치아</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>피부</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>신장</span>
+                                </button>
+                            </div>
+                            <div id="modal-select">
+                                <button class="btn-2">
+                                    <span>귀</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>심장</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>호흡기</span>
+                                </button>
+                            </div>
 
-                                            <!-- 버튼 호버 -->
-                                            <div id="modal-select">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">관절</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">모질</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">소화기</button>
-                                            </div>
-                                            <div id="modal-select">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">눈</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">눈물</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">체중</button>
-                                            </div>
-                                            <div id="modal-select">
-                                                    <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">치아</button>
-                                                    <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">피부</button>
-                                                    <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">신장</button>
-                                                </div>
-                                            <div id="modal-select">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">귀</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">심장</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">호흡기</button>
-                                            </div>
-                                            <div style="margin-top: 50px; font-size: 18px; color:#222;">아이에게 혹시 알러지가 있나요?
-                                            </div>
+                            <div style="margin-top: 50px;">아이에게 혹시 알러지가 있나요?
+                            </div>
 
-                                            <div id="modal-select">
-                                                    <button type="button" class="btn btn-primary selectBtnWidth2 openBtn" data-bs-toggle="button">네, 있어요</button>
-                                                    <!-- 알러지 없음 버튼 누르면 done버튼 나타나기 -->
-                                                    <button type="button" class="btn btn-primary selectBtnWidth2 openCloseBtn" data-bs-toggle="button">아니요, 없어요</button>                                            </div>
-                                            </div>
-                                            <div id="tada-none" style="margin-top: 60px;">
-                                                <button type="submit" class="modalNextBtn" data-bs-toggle="button">Continue</button>
-                                            </div>
-                                            <div id="tada" class="display-none" style="margin-top: 60px;">
-                                                <button type="submit" class="doneBtn2 modalNextBtn" data-bs-toggle="button">Done</button>
-                                            </div>
+                            <div id="modal-select">
+                                <button class="btn-3  clicked">
+                                    <span>네, 있어요</span>
+                                </button>
+                                <button class="btn-3">
+                                    <span>아니요, 없어요</span>
+                                </button>
+                            </div>
 
-                                    </section>
+                        </div>
+                        <!--
+                        continue 버튼 누르면 modal(2)로 스와이퍼
+                        알러지 없어요 누르면 done버튼 나타나야함-->
+                        <div>
+                            <button type="" class="modalNextBtn" data-bs-toggle="button">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal(1) -->
 
-                                    <!-- modal (2) -->
-                                    <section class="swiper-slide">
-                                        <div class="modal_body" style="margin-top: -30px;">
-                                            <div style="font-size: 20px; margin: 10px; color:#222;">어떤 알러지가 있나요?</div>
 
-                                            <!-- 버튼 호버 -->
-                                            <div class="fc" style="margin: 5px;">주단백질원</div>
-                                            <!-- 버튼 호버 -->
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">소</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">돼지</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">양</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">오리</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">닭</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">칠면조</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">연어</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">참치</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">삼치</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">캥거루</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">흑염소</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">사슴</button>
-                                            </div>
+            <!-- modal(2) -->
+            <div id="simpleModal" class="modal">
+                <div class="modal-background">
+                    <div class="modal-content">
+                        <span class="closeBtn">×</span>
+                        <div class="modal_body" style="margin-top: -50px;">
+                            <div style="font-size: 20px">어떤 알러지가 있나요?</div>
 
-                                            <!-- 버튼 호버 -->
-                                            <div class="fc" style="margin: 10px 0 5px 0;">보조 단백질원</div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">계란</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">뼈간식</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">멸치</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">우유</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">펫밀크</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">치즈</button>
-                                            </div>
-                                            <!-- 버튼 호버 -->
-                                            <div class="fc" style="margin: 10px 0 5px 0;">기타</div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">콩</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">옥수수</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">귀리</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">밀가루</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">고구마</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">감자</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">단호박</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">양배추</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button" style="font-size: 15px;">브로콜리</button>
-                                            </div>
-                                            <div id="modal-select2">
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">사과</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button">바나나</button>
-                                                <button type="button" class="btn btn-primary selectBtnWidth" data-bs-toggle="button" style="font-size: 15px;">크랜베리</button>
-                                            </div>
-                                        </div>
-                                        <div class="mt-5">
-                                            <button type="submit" class="doneBtn modalNextBtn" data-bs-toggle="button">Done</button>
-                                        </div>
-                                    </section>
+                            <!-- 버튼 호버 -->
+                            <div>주단백질원</div>
+                            <!-- 버튼 호버 -->
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>소</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>돼지</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>양</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>오리</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>닭</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>칠면조</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>연어</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>참치</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>삼치</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>캥거루</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>흑염소</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>사슴</span>
+                                </button>
+                            </div>
 
-                                </div>
-                                
-                                <!-- <div>
-                                    <button type="submit" class="doneBtn modalNextBtn" data-bs-toggle="button">Done</button>
-                                </div> -->
+                            <!-- 버튼 호버 -->
+                            <div>보조 단백질원</div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>소</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>돼지</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>양</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>오리</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>닭</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>칠면조</span>
+                                </button>
+                            </div>
+                            <!-- 버튼 호버 -->
+                            <div>보조 단백질원</div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>소</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>돼지</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>양</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>오리</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>닭</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>칠면조</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>소</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>돼지</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>양</span>
+                                </button>
+                            </div>
+                            <div id="modal-select2">
+                                <button class="btn-2">
+                                    <span>오리</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>닭</span>
+                                </button>
+                                <button class="btn-2">
+                                    <span>칠면조</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="" class="modalNextBtn" data-bs-toggle="button">Done</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
 
 
-            <!-- swiper js -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-            <script src="js/swiper.js"></script>
-            <script src="js/swiper(modal).js"></script>
+            
+        </div>
 
-            <!-- Bootstrap js -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-            <!-- common js -->
-            <script src="../header/header.js"></script>
-            <script src="../footer/footer.js"></script>
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/swiper(modal).js"></script>
 
-            <!-- custom js -->
-            <script src="js/sign-up.js"></script>
-            <script src="js/modal.js"></script>
+        <!-- Bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- common js -->
+        <script src="../header/header.js"></script>
+        <script src="../footer/footer.js"></script>
+
+        <!-- custom js -->
+        <script src="js/sign-up.js"></script>
+        <script src="js/modal.js"></script>
 </body>
 
 </html>

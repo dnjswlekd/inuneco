@@ -8,18 +8,15 @@ function change_img(e) {
       img.classList.remove("click-img");
     }
   });
-  console.log(e.currentTarget);
+  // console.log(e.currentTarget);
 }
 
-
-
-// select dog or cat -> button active
 
 
 // sign-up-final
 function gofinal() {
   addEventListener("click", (e) => {
-    setTimeout(location.href = "sing-up-final.html",5000);
+    location.href = "sing-up-final.html";
   });
 }
 
@@ -29,3 +26,7 @@ function gologin() {
     window.location = "../login/login.html";
   });
 }
+
+
+
+// dog or cat 이미지 누르면 버튼 색 나와야함

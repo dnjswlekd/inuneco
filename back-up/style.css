@@ -14,7 +14,7 @@ body {
 }
 
 html.modal-active,
-body.modal-active { 
+body.modal-active {
   overflow: hidden;
 }
 
@@ -30,7 +30,6 @@ body.modal-active {
 .modal-head {
   text-align: left;
 }
-
 
 /* 전체 박스 */
 #modal-container {
@@ -92,7 +91,6 @@ body.modal-active {
   margin-bottom: 50px;
 }
 
-
 /* 본문 버튼 */
 .content {
   min-height: 100%;
@@ -127,11 +125,9 @@ body.modal-active {
   background: #8d8d8d;
 }
 
-
-
-
 /* modal-select */
 /* 네, 있어요 없어요 */
+
 #modal-select {
   display: flex;
   flex-wrap: nowrap;
@@ -140,9 +136,15 @@ body.modal-active {
   margin: 12px 12px;
 }
 
+#modal-select2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0px 12px;
+}
 
-
-#modal-select .btn-2 {
+.btn-2 {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -151,24 +153,9 @@ body.modal-active {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* margin: 0px 25px 15px; */
-  /* min-width: 150px; */
 }
 
-#modal-select .btn-3 {
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  width: 146px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  /* margin: 0px 25px 15px; */
-  /* min-width: 150px; */
-}
-
-#modal-select .btn-2 span {
+.btn-2 span {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -181,30 +168,36 @@ body.modal-active {
   padding: 11px 3px;
   transition: 0.3s;
   border-radius: 5px;
+  border: 1px solid rgb(28, 31, 30);
 }
 
-#modal-select .btn-3 span {
+.btn-3 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 146px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-3 span {
   position: relative;
   display: inline-block;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 1px;
-  text-transform: uppercase;
   top: 0;
   left: 0;
   width: 128px;
   padding: 11px 3px;
   transition: 0.3s;
   border-radius: 5px;
+  border: 1px solid rgb(28, 31, 30);
 }
 
 /*--- btn-2 ---*/
-
-.btn-2 span {
-  color: rgb(28, 31, 30);
-  border: 1px solid rgb(28, 31, 30);
-  transition: 0.2s;
-}
 
 .btn-2 span:hover {
   color: rgb(255, 255, 255);
@@ -213,27 +206,12 @@ body.modal-active {
   transition: 0.3s ease-out;
 }
 
-.btn-2 span:focus {
-  color: rgb(255, 255, 255);
-  transition: 0.2s 0.1s;
-  background-color: rgb(28, 31, 30);
-  transition: 0.3s ease-out;
-}
-
-.btn-3 span {
-  color: rgb(28, 31, 30);
-  border: 1px solid rgb(28, 31, 30);
-  transition: 0.2s;
-}
-
 .btn-3 span:hover {
   color: rgb(255, 255, 255);
   transition: 0.2s 0.1s;
   background-color: rgb(28, 31, 30);
   transition: 0.3s ease-out;
 }
-
-
 
 /* close */
 
@@ -250,11 +228,6 @@ body.modal-active {
   text-decoration: none;
   color: #666;
 }
-
-
-
-
-
 
 @keyframes blowUpContent {
   0% {
@@ -297,4 +270,3 @@ body.modal-active {
     opacity: 0;
   }
 }
-
