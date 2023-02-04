@@ -69,7 +69,7 @@ body {
   --bs-btn-bg: #d4def0;
   --bs-btn-border-color: #d4def0;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #8d95d6;
+  --bs-btn-hover-bg: #d4def0;
   --bs-btn-hover-border-color: #8d95d6;
   --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
@@ -358,11 +358,10 @@ input:focus {
 /* 반응형 */
 
 body {
-  margin-left: var(--ytd-margin-6x);
   min-width: var(--ytd-watch-flexy-min-player-width);
   /* flex: 1; */
   flex-basis: 1e-9px;
-  max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x));
+  /* max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x)); */
 }
 
 html {
@@ -375,3 +374,6 @@ html {
     var(--ytd-watch-flexy-min-player-height) * (var(--ytd-watch-flexy-width-ratio) / var(--ytd-watch-flexy-height-ratio))
   );
 }
+
+
+

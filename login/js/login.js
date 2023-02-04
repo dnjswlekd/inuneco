@@ -39,3 +39,10 @@ function mouseleave() {
   Icon.setAttribute("src", "/images/icon-naver01.png");
 }
 
+
+
+function goMyPage(){
+  addEventListener('click', e=> {
+    location.href = "../myPage/myPage.html"
+  })
+}
