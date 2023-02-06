@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 body {
   --bs-body-font-family: "helvetica";
   --bs-body-color: #8d95d6;
@@ -44,8 +43,6 @@ body {
   height: 55px;
   /* font-size: 20px; */
 }
-
-
 
 .qna-top .btn-primary {
   --bs-btn-color: #fff;
@@ -221,6 +218,21 @@ input[type="text"] {
   background-color: transparent;
 }
 
+
+select.my-pet-contents-input {
+  letter-spacing: -.57px;
+  width: 243px;
+  height: 34px;
+  border: 1px solid #e2e2e2;
+  border-radius: 1px;
+  padding: 5px;
+  background-color: transparent;
+  color: #636363;
+  text-align: left;
+  font-size: 12px;
+  line-height: 2;
+}
+
 /* file upload */
 .initFileUpload {
   text-align: center;
@@ -333,27 +345,43 @@ input:focus {
 /* clickButtonEvent */
 
 @-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
-    40% {-webkit-transform: translateY(-30px) }
-    60% {-webkit-transform: translateY(-20px);}
-} 
-
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-20px);
+  }
+}
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-20px);}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
 }
-
 
 .bounce {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
 }
-
-
 
 /* 반응형 */
 
@@ -374,6 +402,3 @@ html {
     var(--ytd-watch-flexy-min-player-height) * (var(--ytd-watch-flexy-width-ratio) / var(--ytd-watch-flexy-height-ratio))
   );
 }
-
-
-
