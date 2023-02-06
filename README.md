@@ -1,1 +1,1 @@
-https://dnjswlekd.github.io/sing-up/sing-up.html
+https://dnjswlekd.github.io/sing-up.html
