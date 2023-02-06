@@ -389,7 +389,7 @@ body {
   min-width: var(--ytd-watch-flexy-min-player-width);
   /* flex: 1; */
   flex-basis: 1e-9px;
-  /* max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x)); */
+  max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x));
 }
 
 html {
