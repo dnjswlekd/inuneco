@@ -173,7 +173,7 @@ input[type="text"] {
 }
 
 .ec-base-table table tbody td {
-  padding: 15px 0;
+  padding: 10px 0;
   float: left;
 }
 
@@ -218,9 +218,8 @@ input[type="text"] {
   background-color: transparent;
 }
 
-
 select.my-pet-contents-input {
-  letter-spacing: -.57px;
+  letter-spacing: -0.57px;
   width: 243px;
   height: 34px;
   border: 1px solid #e2e2e2;
@@ -281,7 +280,10 @@ input:focus {
 
 .mt05 {
   margin-top: 5px;
+  margin-bottom: 0;
   text-align: left;
+  top: -20px;
+  position: relative;
 }
 
 .help {
@@ -342,6 +344,15 @@ input:focus {
   margin-top: 28px;
 }
 
+/* 비밀번호 보이게 */
+.main i {
+  position: relative;
+  color: #8d95d6;
+  cursor: pointer;
+  left: 39%;
+  top: -29px;
+}
+
 /* clickButtonEvent */
 
 @-webkit-keyframes bounce {
@@ -383,13 +394,28 @@ input:focus {
   animation-name: bounce;
 }
 
+.slide-in {
+  animation: change 0.5s ease forwards;
+}
+
+@keyframes change {
+  from {
+      transform: translateX(100%);
+      visibility: visible;
+  }
+
+  to {
+      transform: translateX(0%);
+  }
+}
+
 /* 반응형 */
 
-body {
+#sign-up {
   min-width: var(--ytd-watch-flexy-min-player-width);
   /* flex: 1; */
   flex-basis: 1e-9px;
-  max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x));
+  /* max-width: calc(1280px + var(--ytd-watch-flexy-sidebar-width) + 3 * var(--ytd-margin-6x)); */
 }
 
 html {

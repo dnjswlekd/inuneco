@@ -1,4 +1,4 @@
-body {
+#simpleModal {
   margin-left: var(--ytd-margin-6x);
   min-width: var(--ytd-watch-flexy-min-player-width);
   /* flex: 1; */
@@ -16,7 +16,6 @@ html {
     var(--ytd-watch-flexy-min-player-height) * (var(--ytd-watch-flexy-width-ratio) / var(--ytd-watch-flexy-height-ratio))
   );
 }
-
 
 #simpleModal {
   text-align: center;
@@ -41,7 +40,6 @@ html {
   font-size: 14px;
 }
 
-
 /* 알러지 체크 yes */
 .modalNextBtn {
   background: #8d95d6;
@@ -56,8 +54,6 @@ html {
   cursor: pointer;
 }
 /* 알러지 체크 yes */
-
-
 
 /* 알러지 체크 no */
 .modalDoneBtn {
@@ -74,9 +70,6 @@ html {
 }
 
 /* 알러지 체크 no */
-
-
-
 
 .modal {
   display: none;
@@ -97,7 +90,6 @@ html {
 .modal-header {
   text-align: left;
 }
-
 
 .modal-content {
   background-color: #f4f4f4;
@@ -161,8 +153,6 @@ html {
   height: 45px;
 }
 
-
-
 .btn-3 {
   box-sizing: border-box;
   position: relative;
@@ -191,7 +181,6 @@ html {
 
 /*--- btn-2 ---*/
 
-
 .btn-3 span:hover {
   color: rgb(255, 255, 255);
   transition: 0.2s 0.1s;
@@ -199,7 +188,6 @@ html {
   transition: 0.3s ease-out;
   border: 0;
 }
-
 
 @keyframes blowUpContent {
   0% {
@@ -243,12 +231,7 @@ html {
   }
 }
 
-
-
-
-
 /* modal select */
-
 
 .btn-2 {
   box-sizing: border-box;

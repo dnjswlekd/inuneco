@@ -3,9 +3,6 @@ const pw = document.getElementById("Userpw");
 const btn = document.getElementById("btn");
 
 
-
-
-
 btn.addEventListener("click", () => {
   if (id.value === "") {
     label = id.nextElementSibling;
@@ -21,6 +18,8 @@ btn.addEventListener("click", () => {
     }, 1500);
   }
 });
+
+
 
 
 

@@ -83,7 +83,7 @@ a {
 
 .int-area input:focus + label,
 .int-area input:valid + label {
-  top: 0;
+  top: 21px;
   font-size: 15px;
   color: #8d95d6;
 }
@@ -191,6 +191,21 @@ a {
 .btn-auto p label input[name="login-y"]:checked + span::before {
   content: "";
   background-image: url(/images/autoLogin-checked.png);
+}
+
+.slide-in {
+  animation: change 0.5s ease forwards;
+}
+
+@keyframes change {
+  from {
+      transform: translateX(100%);
+      visibility: visible;
+  }
+
+  to {
+      transform: translateX(0%);
+  }
 }
 
 /* 반응형 */

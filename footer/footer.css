@@ -1,12 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    color: #636363;
-}
-
 #footer {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: #636363;
 }
 .display-flex-column {
     display: flex;
@@ -61,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #8085AF;
+    background-color: #8D95D6;
 }
 .bottom-footer-text li {
     list-style: none;
