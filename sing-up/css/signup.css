@@ -95,6 +95,10 @@ body {
   --bs-btn-disabled-border-color: #d4def0;
 }
 
+.progress {
+  --bs-progress-bar-bg: #8d95d6;
+}
+
 /* sign-up 2 */
 
 .info-area {
@@ -265,8 +269,8 @@ select.my-pet-contents-input {
 }
 
 .int-info input[type="password"] {
-  min-height: 34px;
-  line-height: 34px;
+  /* min-height: 34px; */
+  line-height: 21px;
   margin: 0;
   font-size: 12px;
   border: 0;
@@ -400,12 +404,12 @@ input:focus {
 
 @keyframes change {
   from {
-      transform: translateX(100%);
-      visibility: visible;
+    transform: translateX(100%);
+    visibility: visible;
   }
 
   to {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
