@@ -35,6 +35,10 @@ body {
   padding-bottom: 60px;
 }
 
+.name {
+  color: #8d95d6;
+}
+
 /* next-btn */
 .Q1-btn .btn {
   --bs-btn-border-radius: 8rem;
@@ -283,7 +287,7 @@ input:focus {
 }
 
 .mt05 {
-  margin-top: 5px;
+  margin-top: 23px;
   margin-bottom: 0;
   text-align: left;
   top: -20px;
