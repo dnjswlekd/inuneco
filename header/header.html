@@ -1,44 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    
-    <!-- header -->
-    <div class="header" class="display-flex">
-        <div class="top-banner">
-            <p>이누네코 주인님은 전상품 무료배송!</p>
-        </div>
-        <div class="header display-flex">
-            <a href="main-page.html">
-                <img src="../header/img/logo1.png" alt="inuneco logo">
-            </a>
-            <div class="main-title">
-                <ul class="main-menu">
-                    <li><a href=""><b class="after">SHOP</b></a>
-                        <ul class="sub-menu">
-                            <li><a class="after" href="">all</a></li>
-                            <li><a class="after" href="">food</a></li>
-                            <li><a class="after" href="">living</a></li>
-                            <li><a class="after" href="">clean</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="" class="color-8d95d6"><b class="after">BEST</b></a></li>
-                    <li><a href=""><b class="after">INUNECO LIFE</b></a>
-                        <ul class="sub-menu">
-                            <li><a class="after" href="">our story</a></li>
-                            <li><a class="after" href="">magazine</a></li>
-                            <li><a class="after" href="">pet-on</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""><b class="after">COMMUNITY</b></a>
-                        <ul class="sub-menu">
-                            <li><a class="after" href="">notice</a></li>
-                            <li><a class="after" href="">Q&A</a></li>
-                            <li><a class="after" href="">review</a></li>
-                        </ul>
-                    </li>
-                </ul>
+<head>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <!-- //favicon -->
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- //font-awesome cdn -->
+    <!-- 반응형 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <!-- 반응형 -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="header.js"></script>
+    <title>inuneco-header</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="top-header-wrap">
+            <div class="top-header-box">
+                <div class="top-title">카카오 간편회원 가입 시 다양한 할인쿠폰 증정!</div>
+                <img class="banner-bt" src="/images/top-banner-box.png" alt="x">
             </div>
-            <div class="my-menu display-flex">
-                <img class="user-icon" src="../header/img/user.png" alt="">
-                <img class="menu-icon" src="../header/img/menu.png" alt="">
+        </div>
+        <div class="header-wrap">
+            <div class="header-box">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="/images/inuneco-logo.png" alt="mainlogo">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="gnb-ul">
+                        <li>
+                            <a href="/"><span>SHOP</span></a>
+                            <div class="gnb-inner"></div>
+                        </li>
+                        <li>
+                            <a href="/"><span>COMMUNITY</span></a>
+                            <div class="gnb-inner"></div>
+                        </li>
+                        <li>
+                            <a href="/"><span style="color: #434952;">BEST</span></a>
+                            <div class="gnb-inner"></div>
+                        </li>
+                        <li>
+                            <a href="/"><span>INUNECO LIFE</span></a>
+                            <div class="gnb-inner"></div>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="util-box">
+                    <li>
+                        <a href="/">
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span>주문조회</span>
+                        </a>
+                    </li>
+                    <ul class="user-box">
+                        <li>
+                            <a href="">
+                                <img src="/images/search.png" alt="search">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/images/record.png" alt="record">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/images/cart.png" alt="cart">
+                                <span>0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>
+</body>
+
+</html>
