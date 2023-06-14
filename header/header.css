@@ -41,7 +41,7 @@ body {
 
 /* header */
 
-.header {
+#header {
   height: 108px;
 }
 
@@ -107,7 +107,8 @@ body {
 }
 
 .gnb {
-  margin-top: 20px;
+  margin: 32px 0 0 116px;
+  text-align: center;
 }
 
 .gnb .gnb-ul > li {
@@ -129,6 +130,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
+  margin-left: auto;
 }
 
 .util-box > li > a {
@@ -157,5 +159,9 @@ body {
 
 /* 반응형 */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1550px) {
+  #header .gnb {
+    display: none;
+    transition: all 1s;
+  }
 }
