@@ -24,8 +24,13 @@ a {
 }
 
 .login-form {
-  width: 30%;
+  width: 447px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1400px;
   color: #8d95d6;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .login-form .logo {
@@ -41,7 +46,7 @@ a {
 
 .int-area input {
   position: relative;
-  left: 24px;
+  left: -5px;
   width: 220px;
   padding: 20px 10px 10px;
   background-color: transparent;
@@ -53,8 +58,8 @@ a {
 }
 
 .int-area label {
-  position: absolute;
-
+  position: relative;
+  float: left;
   top: 35px;
   font-size: 15px;
   color: #6b6b6b;
