@@ -106,7 +106,7 @@ body {
   max-width: 100%;
 }
 
-.gnb {
+#header .gnb {
   margin: 32px 0 0 116px;
   text-align: center;
 }
