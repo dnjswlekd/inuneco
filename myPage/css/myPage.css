@@ -340,6 +340,12 @@
   font-weight: 500;
 }
 
+#myshop_coupon_cnt2 {
+  font-size: 25px;
+  color: #80afe5;
+  font-weight: 500;
+}
+
 .myshop_home_bottom a {
   color: #4c4c4c;
   outline: none;
@@ -731,18 +737,17 @@ b,
   }
 }
 
-
 .slide-in {
   animation: change 0.5s ease forwards;
 }
 
 @keyframes change {
   from {
-      transform: translateX(100%);
-      visibility: visible;
+    transform: translateX(100%);
+    visibility: visible;
   }
 
   to {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
