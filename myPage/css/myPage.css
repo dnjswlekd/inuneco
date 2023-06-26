@@ -181,7 +181,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/mypage-proflie.png);
+  background-image: url(/images/mypage-proflie.png);
   margin: 0 auto 20px;
   border-radius: 100%;
   cursor: pointer;
@@ -196,7 +196,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/info-img3.png);
+  background-image: url(/images/info-img3.png);
   margin: 10px auto 20px;
   border-radius: 100%;
   cursor: pointer;
@@ -211,7 +211,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/info-img5.png);
+  background-image: url(/images/info-img5.png);
   margin: 10px auto 20px;
   border-radius: 100%;
   cursor: pointer;
@@ -379,7 +379,7 @@
   width: 30px;
   height: 30px;
   background-color: transparent;
-  background-image: url(../images/ico_arrow_right_cline.png);
+  background-image: url(/images/ico_arrow_right_cline.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 15px auto;
@@ -445,7 +445,7 @@
   height: 20px;
   display: block;
   background-color: transparent;
-  background-image: url(../images/ico_direction_right.png);
+  background-image: url(/images/ico_direction_right.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px auto;
